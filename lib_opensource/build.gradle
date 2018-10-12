@@ -69,11 +69,13 @@ dependencies {
     // RxJava
 //    implementation deps.rxjava2
     api deps.rx_android
-
     //router
     api deps.arouter.runtime
     //logutils
     api deps.logutils
+    //autolayout
+    api deps.autolayout
+
     compile "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
 }
 
