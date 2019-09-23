@@ -18,7 +18,7 @@ class NbaDataRepository: IDataRepository{
 
     fun <T> getNbaData(clazz: Class<T>): Observable<T>? {
         return ApiClient.getNbaService()
-                .getNbaData(ApiConstants.NBA_KEY)
+                .getNbaData(ApiConstants.NBA_KEY,"火箭")
                 .compose(SwitchSchedulers.applyShedulers())
                 //it是ResponseBody，这里调用string()方法才能正确的拿到返回值
                 .map {

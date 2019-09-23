@@ -27,15 +27,14 @@ android {
         abortOnError false
     }
 
-    buildToolsVersion '27.0.3'
 }
 
 dependencies {
 
     api fileTree(dir: 'libs', include: ['*.jar'])
-    testApi 'junit:junit:4.12'
-    androidTestApi 'com.android.support.test:runner:1.0.1'
-    androidTestApi 'com.android.support.test.espresso:espresso-core:3.0.1'
+    testImplementation 'junit:junit:4.12'
+    androidTestImplementation 'com.android.support.test:runner:1.0.1'
+    androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.1'
 
     // Support libraries
     api deps.support.app_compat
@@ -76,7 +75,7 @@ dependencies {
     //autolayout
     api deps.autolayout
 
-    compile "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
+    implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
 }
 
 uploadArchives {

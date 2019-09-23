@@ -10,4 +10,7 @@ interface NbaApiService {
     @GET("nba")
     fun getNbaData(@Query("key") key:String): Observable<ResponseBody>
 
+
+    @GET("team")
+    fun getNbaData(@Query("key") key:String,@Query("team")team:String): Observable<ResponseBody>
 }

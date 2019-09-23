@@ -32,7 +32,6 @@ android {
     dataBinding {
         enabled = true
     }
-    buildToolsVersion '27.0.3'
 }
 
 dependencies {
@@ -40,7 +39,7 @@ dependencies {
 
     api project(':lib_coremodel')
     annotationProcessor deps.arouter.compiler
-    compile "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
+    implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
 }
 
 uploadArchives {

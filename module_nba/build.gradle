@@ -61,4 +61,8 @@ dependencies {
     api project(':lib_coremodel')
     api project(':lib_common')
     annotationProcessor deps.arouter.compiler
+    implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
+}
+repositories {
+    mavenCentral()
 }
